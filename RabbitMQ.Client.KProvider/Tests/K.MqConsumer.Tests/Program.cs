@@ -16,11 +16,11 @@ namespace K.MqConsumer.Tests
                 sub.Can_send_diff_object();
                 sub.Can_send_notbase_same_object();
 
-                var task = new TaskConsumerTests();
-                task.Can_send_string();
-                task.Can_send_base_object();
-                task.Can_send_diff_object();
-                task.Can_send_notbase_same_object();
+                //var task = new TaskConsumerTests();
+                //task.Can_send_string();
+                //task.Can_send_base_object();
+                //task.Can_send_diff_object();
+                //task.Can_send_notbase_same_object();
             }
             catch (Exception ex)
             {
