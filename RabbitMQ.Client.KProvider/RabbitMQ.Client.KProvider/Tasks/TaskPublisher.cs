@@ -1,4 +1,5 @@
-﻿using RabbitMQ.Client.KProvider.Configuration;
+﻿using RabbitMQ.Client.Content;
+using RabbitMQ.Client.KProvider.Configuration;
 
 namespace RabbitMQ.Client.KProvider
 {
@@ -7,7 +8,7 @@ namespace RabbitMQ.Client.KProvider
     /// </summary>
     /// <remarks>
     /// 注1：
-    ///     均默认为持久化、不自动删除（durable: true, exclusive: false, autoDelete: false）
+    ///     均默认为持久化、不自动删除（DeliveryMode = 2;durable: true, exclusive: false, autoDelete: false）
     /// 注2：
     ///     这里不使用Mq中的队列(queue)或交换器(exchange)；
     ///     我们将使用key(做为消息匹配键)；
@@ -18,6 +19,7 @@ namespace RabbitMQ.Client.KProvider
         #region Fields
         private readonly IConnection connection;
         private readonly IModel channel;
+        private readonly IBasicProperties properties;
         private readonly MqConfig _config;
         #endregion
 
@@ -32,6 +34,8 @@ namespace RabbitMQ.Client.KProvider
             var factory = new ConnectionFactory { HostName = _config.Host, Port = _config.Port, UserName = _config.Username, Password = _config.Password, VirtualHost = _config.VirtualHost };
             connection = factory.CreateConnection();
             channel = connection.CreateModel();
+            properties = (IBasicProperties)(new MapMessageBuilder(channel).GetContentHeader());
+            properties.DeliveryMode = 2;
         }
         #endregion
 
@@ -45,7 +49,7 @@ namespace RabbitMQ.Client.KProvider
         {
             //ToImprove 减少固定参数
             channel.QueueDeclare(queue: key, durable: true, exclusive: false, autoDelete: false, arguments: null);
-            channel.BasicPublish(exchange: "", routingKey: key, basicProperties: null, body: msg);
+            channel.BasicPublish(exchange: "", routingKey: key, basicProperties: properties, body: msg);
         }
         #endregion
 

@@ -1,0 +1,12 @@
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqConsumer.Tests\bin\Debug\K.MqConsumer.Tests.exe.config
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqConsumer.Tests\bin\Debug\K.MqConsumer.Tests.exe
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqConsumer.Tests\bin\Debug\K.MqConsumer.Tests.pdb
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqConsumer.Tests\bin\Debug\RabbitMQ.Client.KProvider.dll
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqConsumer.Tests\bin\Debug\RabbitMQ.Client.dll
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqConsumer.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqConsumer.Tests\bin\Debug\RabbitMQ.Client.KProvider.pdb
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqConsumer.Tests\bin\Debug\RabbitMQ.Client.xml
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqConsumer.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqConsumer.Tests\obj\Debug\K.MqConsumer.Tests.csprojResolveAssemblyReference.cache
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqConsumer.Tests\obj\Debug\K.MqConsumer.Tests.exe
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqConsumer.Tests\obj\Debug\K.MqConsumer.Tests.pdb

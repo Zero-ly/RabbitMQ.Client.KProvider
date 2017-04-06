@@ -1,4 +1,5 @@
-﻿using RabbitMQ.Client.KProvider.Configuration;
+﻿using RabbitMQ.Client.Content;
+using RabbitMQ.Client.KProvider.Configuration;
 
 namespace RabbitMQ.Client.KProvider
 {
@@ -9,9 +10,11 @@ namespace RabbitMQ.Client.KProvider
     /// </remarks>
     public class SubscriptPublisher : IPublisher
     {
+        //private const string DEFAULT_EXCHANGE_NAME = "k.ex1";
         #region Fields
         private readonly IConnection connection;
         private readonly IModel channel;
+        private readonly IBasicProperties properties;
         private readonly MqConfig _config;
         #endregion
 
@@ -26,6 +29,8 @@ namespace RabbitMQ.Client.KProvider
             var factory = new ConnectionFactory { HostName = _config.Host, Port = _config.Port, UserName = _config.Username, Password = _config.Password, VirtualHost = _config.VirtualHost };
             connection = factory.CreateConnection();
             channel = connection.CreateModel();
+            properties = (IBasicProperties)(new MapMessageBuilder(channel).GetContentHeader());
+            properties.DeliveryMode = 2;
         }
         #endregion
 
@@ -38,7 +43,7 @@ namespace RabbitMQ.Client.KProvider
         public void SendBytes(string key, byte[] bMessage)
         {
             channel.ExchangeDeclare(exchange: key, type: ExchangeType.Fanout);
-            channel.BasicPublish(exchange: key, routingKey: "", basicProperties: null, body: bMessage);
+            channel.BasicPublish(exchange: key, routingKey: "", basicProperties: properties, body: bMessage);
         }
         #endregion
 

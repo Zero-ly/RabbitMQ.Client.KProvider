@@ -1,0 +1,14 @@
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\bin\Debug\K.MqPublishr.Tests.exe.config
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\bin\Debug\K.MqPublishr.Tests.exe
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\bin\Debug\K.MqPublishr.Tests.pdb
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\bin\Debug\nunit.framework.dll
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\bin\Debug\RabbitMQ.Client.KProvider.dll
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\bin\Debug\RabbitMQ.Client.dll
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\bin\Debug\RabbitMQ.Client.KProvider.pdb
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\bin\Debug\nunit.framework.xml
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\bin\Debug\RabbitMQ.Client.xml
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\obj\Debug\K.MqPublishr.Tests.csprojResolveAssemblyReference.cache
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\obj\Debug\K.MqPublishr.Tests.exe
+E:\LyCodes\RabbitMQ\RabbitMQ.Client.KProvider\RabbitMQ.Client.KProvider\Tests\K.MqPublishr.Tests\obj\Debug\K.MqPublishr.Tests.pdb
