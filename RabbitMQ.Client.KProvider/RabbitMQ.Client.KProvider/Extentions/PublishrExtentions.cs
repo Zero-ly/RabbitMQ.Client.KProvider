@@ -33,6 +33,7 @@ namespace RabbitMQ.Client.KProvider
         /// <param name="t">值</param>
         public static void Send<T>(this IPublisher publisher, string key, T t)
         {
+            //Todo 这里的key应改为前缀，避免key重复。
             publisher.SendBytes(key: key, msg: CommonHelper.Serialize(t));
         }
     }
