@@ -55,7 +55,7 @@ namespace K.MqClient.Tests.Tasks
         [Test]
         public void Is_task_on_same_time_start_up_tests()
         {
-            for (var i = 0; i < 100; i++)
+            for (var i = 0; i < 10; i++)
             {
                 _sender.Send("k_mq_string", "string_小明___" + i);
             }

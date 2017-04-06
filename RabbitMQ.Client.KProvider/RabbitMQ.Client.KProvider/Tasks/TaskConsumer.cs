@@ -40,13 +40,15 @@ namespace RabbitMQ.Client.KProvider
         public void ReceiveBytes(string key, Action<byte[]> action)
         {
             channel.QueueDeclare(queue: key, durable: true, exclusive: false, autoDelete: false, arguments: null);
+            channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
 
             var consumer = new EventingBasicConsumer(channel);
             consumer.Received += (model, ea) =>
             {
                 action(ea.Body);
+                channel.BasicAck(deliveryTag: ea.DeliveryTag, multiple: true);
             };
-            channel.BasicConsume(queue: key, noAck: true, consumer: consumer);
+            channel.BasicConsume(queue: key, noAck: false, consumer: consumer);
 
         }
         #endregion

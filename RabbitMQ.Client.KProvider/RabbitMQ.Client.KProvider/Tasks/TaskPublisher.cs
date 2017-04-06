@@ -34,8 +34,9 @@ namespace RabbitMQ.Client.KProvider
             var factory = new ConnectionFactory { HostName = _config.Host, Port = _config.Port, UserName = _config.Username, Password = _config.Password, VirtualHost = _config.VirtualHost };
             connection = factory.CreateConnection();
             channel = connection.CreateModel();
-            properties = (IBasicProperties)(new MapMessageBuilder(channel).GetContentHeader());
-            properties.DeliveryMode = 2;
+            properties = channel.CreateBasicProperties();
+            properties.Persistent = true;
+            //properties.DeliveryMode = 2;  //持久化 另一种设置方式
         }
         #endregion
 
