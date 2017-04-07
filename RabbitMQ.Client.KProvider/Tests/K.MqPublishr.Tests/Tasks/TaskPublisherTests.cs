@@ -48,6 +48,15 @@ namespace K.MqClient.Tests.Tasks
             _sender.Send(p);
         }
 
+        [Test]
+        public void Can_unack_when_excepted()
+        {
+            for (var i = 0; i < 20; i++)
+            {
+                _sender.Send("k_mq_uncak_when_excepted", i);
+            }
+        }
+
         /// <summary>
         /// 先发送，后启动接收者，是否会只分派给一个接收者？
         /// 答案是：否,?

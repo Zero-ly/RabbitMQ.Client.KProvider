@@ -65,5 +65,24 @@ namespace K.MqConsumer.Tests.Tasks
                 Thread.Sleep(SLEEP_TIME);
             });
         }
+
+
+        private static int f = 4;
+        public void Can_unack_when_excepted()
+        {
+            _receiver.Receive("k_mq_uncak_when_excepted", e =>
+            {
+                Thread.Sleep(SLEEP_TIME);
+                if (f++ % 3 == 0)
+                {
+                    Console.WriteLine("发生了异常！");
+                    throw new Exception("I'm error");
+                }
+                else
+                {
+                    Console.WriteLine(string.Format("【Task】正常 receive:{0}", e));
+                }
+            });
+        }
     }
 }

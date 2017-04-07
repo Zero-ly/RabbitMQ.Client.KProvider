@@ -21,6 +21,7 @@ namespace K.MqConsumer.Tests
                 task.Can_send_base_object();
                 task.Can_send_diff_object();
                 task.Can_send_notbase_same_object();
+                task.Can_unack_when_excepted();
             }
             catch (Exception ex)
             {
